@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Pirâmide Online</title>
+</head>
+
+<body>
+    <ul class="pages">
+        <li class="game page">
+            <label for="levels">Número de níveis da pirâmide</label>
+            <input type="number" name="levels" id="levels" min="1" max="9">
+            <button id="deal">Dar Cartas</button>
+        </li>
+        <li class="login page">
+            <div class="form">
+                <h3 class="title">What's your nickname?</h3>
+                <input class="usernameInput" type="text" maxlength="14" />
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
